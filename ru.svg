@@ -1,0 +1,26 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+
+    <clipPath id="clip">
+      <rect x="10" y="10" width="300" height="180" rx="28" ry="28"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow)">
+    
+    <g clip-path="url(#clip)">
+      <rect x="10" y="10" width="300" height="60" fill="#FFFFFF"/>
+      <rect x="10" y="70" width="300" height="60" fill="#1C57D6"/>
+      <rect x="10" y="130" width="300" height="60" fill="#D52B1E"/>
+    </g>
+
+    <rect x="10" y="10" width="300" height="180" rx="28" ry="28"
+          fill="none"
+          stroke="#9AA0A6"
+          stroke-opacity="0.45"
+          stroke-width="2.5"/>
+  </g>
+</svg>

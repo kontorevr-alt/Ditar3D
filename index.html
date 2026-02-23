@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Ditar</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="src/css/styles.css"/>
+        <link rel="stylesheet" href="src/css/animations.css"/>
+        <link rel="stylesheet" href="src/css/dialog.css"/>
+        <link rel="stylesheet" href="src/css/burger-menu.css"/>
+    </head>
+    <body>
+        <section id="start"></section>
+        <div class="backdrop" id="backdrop" data-open="false"></div>
+
+        <div class="navdock" id="navdock" data-open="false">
+            <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <div class="icon" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </div>
+            </button>
+
+            <nav class="menu" id="menu">
+            <h4>Menu</h4>
+            <a href="#start">Start</a>
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+            </nav>
+        </div>
+        
+        <div class='portfolio-start'>
+            <div class='portfolio-profile'>
+                <h1 id='name'>Ditar</h1>
+                <p>3d artist/3d animator</p>
+                <h5>More than 3 years of experience</h5>
+                <p style='font-size: 0.65vw;'>designed and developed by <a style='color: #2d2d2db1;' href='https://github.com/kuzzia88'>CKACHATb</a></p>
+            </div>
+        </div>
+        <section id="about"></section>
+        <div class='about-container'>
+            <div class='about'>
+                <h2>About me</h2>
+                <canvas class='black-line'></canvas>
+                <h3>Welcome! I am Ditar, a professional 3D artist with more than 3 years of experience in creating immersive and realistic visualizations. My passion for art and technology has allowed me to develop a unique style that combines innovation and creativity. I will be glad to cooperate!</h3>
+            </div>
+        </div>
+        <section id="projects"></section>
+        <div class='container-projects'>
+            <div class='projects'>
+                <h2>My projects</h2>
+                <canvas class='black-line'></canvas>
+                <div class='projects-container'></div>
+            </div>
+        </div>
+        <section id="contacts"></section>
+        <div class='contacts-container'>
+            <div class='contacts'>
+                <h2>Contacts</h2>
+                <canvas class='black-line'></canvas>
+                <div class='split'>
+                    <div class='contacts-info'>
+                        <canvas class='thin-black-line'></canvas>
+                        <span><a href='https://t.me/Hellp_546' style='text-decoration: none; color:#000000'><i class='bx bxl-telegram' style='color:#000000' ></i></i> @Hellp_546</a></span>
+                        <span><i class='bx bx-envelope' style='color:#000000' ></i> romanenko@gmail.otsos</span>
+                        <span><i class='bx bx-navigation' style='color:#000000' ></i> romka_prodavec</span>
+                        <canvas class='thin-black-line'></canvas>
+                    </div>
+                    <div class='info'>
+                        <h3>Write at any time, I will answer at any opportunity. I will be glad to hear from you)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <dialog class="img-dialog">
+            <div class="img-dialog-inner">
+                <button class="img-dialog-close" type="button">×</button>
+                <div class='img-dialog-container'>
+                    <div class="img-dialog-content">
+                        <button class="prev" type="button">‹</button>
+
+                        <img class="viewer" alt="" draggable="false">
+
+                        <button class="next" type="button">›</button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <script src='src/js/burger-menu.js' defer></script>
+        <script src='src/js/script.js' defer></script>
+    </body>
+</html>
